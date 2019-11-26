@@ -81,13 +81,13 @@ if __name__ == "__main__":
     # start a web server for sockets
     appsoc.listen(cfg['DEFAULT']['_WEBSOCKPORT'])
     
-    print("Listening...")
-
     # start a web server for index.html and run in background thread
     application.listen(cfg['DEFAULT']['_WEBPORT'])
     t = threading.Thread(target=tornado.ioloop.IOLoop.instance().start)
     t.daemon = True
     t.start()
+
+    print("Listening...")
 
     # connect to a change stream
     change_stream = handle.watch()
