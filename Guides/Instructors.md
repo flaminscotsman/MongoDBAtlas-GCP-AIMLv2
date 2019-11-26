@@ -1,4 +1,5 @@
 # ReadMe for Instructors
+
 * Before attendees arrive, run through the entire workshop
 * Additionally, you can deploy a GCP instance, stage this github repo there, and run `python3 iceBreaker.py` after configuring your GCP and Atlas details. 
 * This will serve as an ice breaker like we have done in the past

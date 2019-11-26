@@ -1,5 +1,6 @@
 # MongoDB Setup
-* Create a free account on MongoDB Atlas on [cloud.mongodb.com](https://cloud.mongodb.com) Click on “Try Free”at the top right if you do not have an account or “Sign In” if you already have a login. 
+
+* Create a free account on MongoDB Atlas at [cloud.mongodb.com](https://cloud.mongodb.com) Click on “Try Free” at the top right if you do not have an account or “Sign In” if you already have a login. 
 
 ![](images/image1.png)
 
@@ -7,7 +8,7 @@
 
 ![](images/imageXX.png)
 
-* Create New Cluster by selecting Google Cloud Platform as a “Cloud Provider” and leave all other settings as-is and click "Create Cluster" on the bottom right to deploy your M0 (free) cluster
+* Create a New Cluster by selecting Google Cloud Platform as a “Cloud Provider” and select an M0 (free) instance. Optionally provide a name for your cluster but leave all other settings as-is. Click "Create Cluster" on the bottom right to deploy your M0 cluster.
 
 * While this spins up, lets click on the “Database Access” submenu, under “Security” on the left menu. 
 
@@ -27,7 +28,7 @@
 
 * Select “Allow Access from Anywhere” for the purpose of this demo and click on “Confirm”.  
 
-*Note*:  When actually putting something into production, you will want to narrow the scope of where your database can be accessed and specify a specific IP address/CIDR block.
+*Note*:  When running a cluster in production, you will want to narrow the scope of where your database can be accessed and specify a specific IP address/CIDR block and/or using VPC peered connection.
 
 ![](images/image4.png)
 

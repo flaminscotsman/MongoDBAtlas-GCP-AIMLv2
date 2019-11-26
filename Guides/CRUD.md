@@ -1,9 +1,11 @@
 # Basic CRUD Operations
 
  ## Background
+ 
 The purpose of this page is if you are following along on your own or want to copy/paste the answers:
 
 ## Prereqs
+
 * Deploy the cluster and follow the guide for [AtlasSetup.md](AtlasSetup.md)
 * Once complete, click the `...` button, then "Load Sample Dataset" and confirm the load. This may take several minutes. 
 
@@ -40,6 +42,7 @@ db.movies.find(
 ```
 
 ## Aggregations 1
+
 Here we will want to find all comedies, create an individual document for each country, then group by country to get a count.
 
 | Stage                                 | Answer |
@@ -49,6 +52,7 @@ Here we will want to find all comedies, create an individual document for each c
 | How can you use $group to count all the comedies grouped by country? | `$group { _id: "$countries", count: {$sum:1}}`| 
 
 ## Aggregations 2
+
 Here we want to restrict output with a calculated field for each movie:
 
 | Stage                                 | Answer |
