@@ -60,7 +60,7 @@ This results in a new project being created:
 
 ![image](images/newss01e.png)
 
-* As part of the creation process, the system will download the JSON file. We will use the contents of this file to populate the `gcpcreds.json` for our demo
+* As part of the creation process, the system will download the JSON file. We will use the contents of this file to populate the `gcpcreds.json` file in our change streams application shortly.
 
 ![image](images/newss01f.png)
 
