@@ -35,6 +35,7 @@ except Exception as e:
     sys.exit(1)
 
 handle = conn[cfg['DEFAULT']['_DBNAME']][cfg['DEFAULT']['_COLNAME']]
+print("Connected to Atlas!")
 
 # configure connection to gcp vision api
 os.environ["GOOGLE_APPLICATION_CREDENTIALS"]="gcpcreds.json"
@@ -89,6 +90,8 @@ if __name__ == "__main__":
 	t.daemon = True
 	t.start()
 
+	print("Listening...")
+	
 	# connect to a change stream
 	change_stream = handle.watch(full_document='updateLookup')
 	# every change in the db
