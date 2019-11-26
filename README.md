@@ -4,7 +4,7 @@
 
 This is a tutorial on how to use [MongoDB Atlas](https://cloud.mongodb.com) in conjunction with Google's [AI & Machine Learning Products](https://cloud.google.com/products/ai/) to create an event-driven model in Python.
 
-This is part of a workshop series presented by [MongoDB](https://www.mongodb.com/) and [Google Cloud](https://cloud.google.com/), however it can also be followed along on its own. The Google aspects of the workshop are based on Google's [Vision API](https://cloud.google.com/vision/).
+This is part of a workshop series presented by [MongoDB](https://www.mongodb.com/) and [Google Cloud](https://cloud.google.com/), however it can also be followed along on its own. The Google aspects of the workshop are based on Google's [Vision AI](https://cloud.google.com/vision/).
 
 ## Technical Complexity
 
