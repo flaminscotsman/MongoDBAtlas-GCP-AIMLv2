@@ -31,6 +31,7 @@ except Exception as e:
     sys.exit(1)
 
 handle = conn[cfg['DEFAULT']['_DBNAME']][cfg['DEFAULT']['_COLNAME']]
+print("Connected to Atlas!")
 
 # configure connection to gcp vision api
 os.environ["GOOGLE_APPLICATION_CREDENTIALS"]="gcpcreds.json"
@@ -79,6 +80,8 @@ if __name__ == "__main__":
 
     # start a web server for sockets
     appsoc.listen(cfg['DEFAULT']['_WEBSOCKPORT'])
+    
+    print("Listening...")
 
     # start a web server for index.html and run in background thread
     application.listen(cfg['DEFAULT']['_WEBPORT'])
