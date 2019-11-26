@@ -12,7 +12,7 @@
 
 * When complete, click "Create".
 
-* Fill out the form as below, making sure to select the same "Region" as that of the MongoDB Atlas cluster you created previously. The value for "Zone" is not relevant.  Be sure to select: "Allow full access to all Cloud APIs"
+* Fill out the form as below, making sure to select the same "Region" as that of the MongoDB Atlas cluster you created previously, e.g., "europe-west1 (Belgium)". The value for "Zone" is not relevant.  Be sure to select: "Allow full access to all Cloud APIs"
 
 ![](images/newss04c.png)
 
