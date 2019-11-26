@@ -1,6 +1,6 @@
 # MongoDB Setup
 
-* Create a free account on MongoDB Atlas at [cloud.mongodb.com](https://cloud.mongodb.com) Click on “Try Free” at the top right if you do not have an account or “Sign In” if you already have a login. 
+* Create a free account on MongoDB Atlas at [cloud.mongodb.com](https://cloud.mongodb.com). Click on “Try Free” at the top right if you do not have an account or “Sign In” if you already have a login. 
 
 ![](images/image1.png)
 
