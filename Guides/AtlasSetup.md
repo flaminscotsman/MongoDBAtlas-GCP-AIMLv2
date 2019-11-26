@@ -26,9 +26,9 @@
 
 ![](images/image39.png)
 
-* Select “Allow Access from Anywhere” for the purpose of this demo and click on “Confirm”.  
+* Select “Allow Access from Anywhere” for the purpose of this demo, select "Save as temporary whitelist" and click on “Confirm”.  
 
-*Note*:  When running a cluster in production, you will want to narrow the scope of where your database can be accessed and specify a specific IP address/CIDR block and/or using VPC peered connection.
+*Note*:  When running a cluster in production, you will want to narrow the scope of where your database can be accessed and specify a specific IP address/CIDR block and/or using VPC peered connection. For this demo we are creating a temporary whitelist entry which will automatically be removed after the specified period of time, preventing general access to the cluster.
 
 ![](images/image4.png)
 
