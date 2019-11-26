@@ -23,7 +23,8 @@ Familiarity with the following technologies will be of benefit:
 
 1. Modern web browser such as [Google Chrome](https://www.google.com/chrome/)
   * Required to access MongoDB Atlas, GCP Console, and Google CloudShell 
-* Optionally install [MongoDB Compass](https://www.mongodb.com/download-center/compass), the GUI for MongoDB
+  
+2. Optionally install [MongoDB Compass](https://www.mongodb.com/download-center/compass), the GUI for MongoDB
 
 ## Duration
 
