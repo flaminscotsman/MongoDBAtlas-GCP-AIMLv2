@@ -8,7 +8,7 @@
 
 ![](images/imageXX.png)
 
-* Create a New Cluster by selecting Google Cloud Platform as a “Cloud Provider” and select an M0 (free) instance. Optionally provide a name for your cluster but leave all other settings as-is. Click "Create Cluster" on the bottom right to deploy your M0 cluster.
+* Create a New Cluster by selecting Google Cloud Platform as a “Cloud Provider” and select an M0 (free) instance. Note: Only certain regions such as Belgium have free tier clusters. Optionally provide a name for your cluster but leave all other settings as-is. Click "Create Cluster" on the bottom right to deploy your M0 cluster.
 
 * While this spins up, lets click on the “Database Access” submenu, under “Security” on the left menu. 
 
