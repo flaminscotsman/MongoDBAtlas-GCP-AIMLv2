@@ -51,11 +51,14 @@ _45 Minutes_
 
 
 ## Low Level Readme
+*Note: You can choose between using pre-written code, which is linked/cloned in the 'Readme for configuring the GCP instace' section (3), **or** to write the code from scratch, following along in the section (4) that follows*
 
-* [Readme for configuring MongoDB Atlas](Guides/AtlasSetup.md)
-* [Readme setup GCP project and configuring GCP Vision API](Guides/GCPProjectAndVisionSetup.md)
-* [Readme for configuring the GCP Instance](Guides/GCPInstanceSetup.md)
-* [Readme for writing this code from scratch](Guides/Code.md) or alternately just use the code in the `FinishedSampleCode` directory.
+1. [Readme for configuring MongoDB Atlas](Guides/AtlasSetup.md)
+2. [Readme setup GCP project and configuring GCP Vision API](Guides/GCPProjectAndVisionSetup.md)
+3. [Readme for configuring the GCP Instance](Guides/GCPInstanceSetup.md) *or;* 
+4. [Readme for writing this code from scratch](Guides/Code.md)
+
+## Other Readme's
 * [The guide for CRUD operations used during the instruction part of workshop](Guides/CRUD.md)
 * [Instructor's Notes](Guides/Instructors.md)
 

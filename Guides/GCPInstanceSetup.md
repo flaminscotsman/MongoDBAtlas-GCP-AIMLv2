@@ -1,28 +1,28 @@
 # GCP Instance Setup
 
-* Create a micro Ubuntu 19.04 GCE VM instance in 'europe-west1 (Belgium)' using the instructions given in this [Google quickstart link](https://cloud.google.com/compute/docs/quickstart-linux) or follow these step by step instructions...
+* Create a micro Ubuntu 19.04 GCE VM instance in 'europe-west1 (Belgium)' following these step by step instructions...
 
 * Using the top left hamburger menu, select "Compute Engine" and from the sub menu select "VM Instances", like in picture below
 
-![image](images/newss04a.png)
+> ![image](images/newss04a.png)
 
 * If you do this for the first time an initialization dialogue is shown. Like below
 
-![image](images/newss04b.png)
+> ![image](images/newss04b.png)
 
 * When complete, click "Create".
 
 * Fill out the form as below, making sure to select the same "Region" as that of the MongoDB Atlas cluster you created previously, e.g., "europe-west1 (Belgium)". The value for "Zone" is not relevant.  Be sure to select: "Allow full access to all Cloud APIs"
 
-![](images/newss04c.png)
+> ![](images/newss04c.png)
 
-* In the search box at the top, enter “Firewall” and select the matching suggestion "Firewall Rules VPC network”
+* In the search box at the top, enter “Firewall” and select the matching suggestion "Firewall Rules VPC network”. **Note:** Do not select the firewall rules option for App Engine**
 
-![](images/image19.png)
+> ![](images/image19.png)
 
 * Click “Create Firewall Rule” at the top to create a new rule to open up the needed port for our new server
 
-![](images/image18.png)
+> ![](images/image18.png)
 
 * Enter the following details and click “Create”:
 
@@ -34,21 +34,21 @@ Protocols and ports:
     tcp: 8088-8089
 ``` 
 
-![](images/newss04d.png)
+> ![](images/newss04d.png)
 
 * Make sure you have completed the [GCP Projct & Vision API setup](GCPProjectAndVisionSetup.md) at this point.
 
 * Go back to the Compute Engine page to list all VM instances.
 
-![](images/image27.png)
+> ![](images/image27.png)
 
 * After your instance is created, SSH to your instance by clicking on the SSH button of your instance.
 
-![](images/image16.png)
+> ![](images/image16.png)
 
 * You should see a CloudShell window similar to this open...
 
-![](images/image7.png)
+> ![](images/image7.png)
 
 * Run the following commands:
 
@@ -78,4 +78,4 @@ Please note that in some cases it is not possible to copy/paste the entire block
 
 * Clicking "insert" results in the webpage displaying the change stream documents, showing the insert of the document for the URL along with the update operation after the Google Vision API returns results of its analysis:
 
-![](images/newss02.png)
+> ![](images/newss02.png)
