@@ -18,7 +18,7 @@
 
 * While this spins up, lets click on the “Database Access” submenu, under “Security” on the left menu, then 'Add New User'.
 
->![](images/atlas-j-5.png)
+> <img src="images/atlas-j-5.png" height="400">
 
 * Enter a user name. For our demo, let’s enter `mdbadmin` and enter a secure password.  Record your user name and password in a safe location for reference later. Under “User Privileges”, select “Atlas admin” and click on the “Add User button to complete this section.
 
@@ -36,7 +36,7 @@
 
 * Go to “Clusters” submenu, under “Atlas” on the left menu, then click "Collections" for your cluster.
 
->![](images/atlas-j-9.png)
+> <img src="images/atlas-j-9.png" height="250">
 
 * Click "Add My Own Data
 
@@ -44,11 +44,11 @@
 
 * Create a database called `gcpdemo` with a collection called `democol` 
 
->![](images/atlas-j-11.png)
+> <img src="images/atlas-j-11.png" height="300">
 
 * Go to “Clusters” submenu, under “Atlas” on the left menu, then click "Connect"
 
->![](images/atlas-j-12.png)
+> <img src="images/atlas-j-12.png" height="300">
 
 * A window will open. Select “Connect Your Application.”
 
