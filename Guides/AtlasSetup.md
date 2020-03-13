@@ -6,7 +6,7 @@
 
 * Under the 'Starter Clusters' box (left-hand side), click 'Create a cluster'
 
->![](images/atlas-j-2.png | width=250)
+> <img src="images/atlas-j-2.png" height="500">
 
 * Select GCP as the Cloud Provider and then Belgium as the region
 
