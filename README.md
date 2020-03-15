@@ -95,9 +95,11 @@ Feel free to use the following URLs for execution:
 
 Once you're ready to terminate the project you can tear down each component as follows:
 
-* Disable the *Cloud Vision API* and (if required) the *Cloud Natural Language API*
-* Remove the Firewall rule
+* Remove the GCP Firewall rule
 * Terminate the GCP VM
-* Remove the Atlas Whitelist rule
-* Remove the Atlas user
-* Remove the Atlas cluster
+* Remove the GCP "Service Account Key" Credentials
+* Disable the GCP *Cloud Vision API* and (if required) the *Cloud Natural Language API*
+* Shutdown the GCP Project
+* Remove the MongoDB Atlas Whitelist rule
+* Remove the MongoDB Atlas user
+* Remove the MongoDB Atlas cluster
