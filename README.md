@@ -49,12 +49,12 @@ _45 Minutes_
 
 
 ## Low Level Readme
-*Note: You can choose between using pre-written code, which is linked/cloned in the 'Readme for configuring the GCP instace' section (3), **or** to write the code from scratch, following along in the section (4) that follows*
+*Note: You can choose between using pre-written code, which is linked/cloned in the 'Readme for configuring the GCP instace' section (3a), **or** to write the code from scratch, following along in the section (3b) that follows*
 
 1. [Readme for configuring MongoDB Atlas](Guides/AtlasSetup.md)
 2. [Readme setup GCP project and configuring GCP Vision API](Guides/GCPProjectAndVisionSetup.md)
-3. [Readme for configuring the GCP Instance](Guides/GCPInstanceSetup.md) *or;* 
-4. [Readme for writing this code from scratch](Guides/Code.md)
+3a. [Readme for configuring the GCP Instance](Guides/GCPInstanceSetup.md) *or;* 
+3b. [Readme for writing this code from scratch](Guides/Code.md)
 
 ## Other Readme's
 * [The guide for CRUD operations used during the instruction part of workshop](Guides/CRUD.md)
@@ -69,7 +69,7 @@ _45 Minutes_
 * Notice that in the web page and on the CLI output of the python script that it saw an insert
 * Notice that after the insert, the change stream called the Google Vision API to see what is in it. Refresh the Compass or Atlas Data Explorer view and see the rich data structure of the GCP Vision API.
 
-![](Guides/images/newss03.png)
+![Compass](Guides/images/newss03.png)
 
 # Sample Data
 
@@ -85,6 +85,8 @@ Feel free to use the following URLs for execution:
 
 * Create a GCP Cloud Storage Bucket to host your own images
 * Follow along with the `runnerAdvanced.py` using the GCP Natural Language API to do sentiment analysis on non-URL text in the `text` attribute of a document
+  * When the runnerAdvanced.py script is running you can enter text into the search box of the web application and the code will perform sentiment analysis on it, presenting the results in the output pane
+  * Note: you will need to enable the 'Cloud Natural Language API' in your GCP project before running the runnerAdvanced.py script, in the same way you enabled the 'Cloud Vision API'
 * Find another GCP API and integrate with it. Examples:
   * Use the Cloud Translation API to extend the `runnerAdvanced.py` to translate your text into another language
   * Consider integrating the Google Assistant API
