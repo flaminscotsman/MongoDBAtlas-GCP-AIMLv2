@@ -16,7 +16,9 @@
 
 > ![](images/newss04c.png)
 
-* In the search box at the top, enter “Firewall” and select the matching suggestion "Firewall Rules VPC network”. **Note:** Do not select the firewall rules option for App Engine**
+* Click the "Create" button at the end of the page to continue.
+
+* Next, in the search box at the top, enter “Firewall” and select the matching suggestion "Firewall Rules VPC network”. **Note:** *Do not* select the firewall rules option for App Engine**
 
 > ![](images/image19.png)
 
@@ -50,7 +52,7 @@ Protocols and ports:
 
 > ![](images/image7.png)
 
-* Run the following commands:
+* Run the following commands from the command line:
 
 ```
   sudo apt-get update
@@ -61,7 +63,7 @@ Protocols and ports:
   python3 -m pip install -r requirements.txt
 ```
 
-Please note that in some cases it is not possible to copy/paste the entire block above into Cloud Shell in one go. In this case please copy/paste line-by-line, or use the following single line command:
+Please note that it may not be possible to copy/paste the entire block above into Cloud Shell in one go. In this case please copy/paste line-by-line, or use the following single line command:
 
 ```
   sudo apt-get update ; sudo apt-get install -y python3-pip ; sudo apt-get install -y git ; git clone https://github.com/rbohan/MongoDBAtlas-GCP-AIMLv2.git ; cd MongoDBAtlas-GCP-AIMLv2/FinishedSampleCode ; python3 -m pip install -r requirements.txt
