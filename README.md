@@ -81,11 +81,23 @@ Feel free to use the following URLs for execution:
 4. https://storage.googleapis.com/demo-visionapi-atlas/Marketing/eiffel-tower.jpg
 5. https://storage.googleapis.com/demo-visionapi-atlas/Finance/check.jpg
 
+# Tear Down
+
+Once complete you can tear down the project as follows:
+
+* Disable the 'Cloud Vision API' and (if required) the 'Cloud Natural Language API'
+* Remove the Firewall rule
+* Terminate the GCP VM
+* Remove the Atlas Whitelist rule
+* Remove the Atlas user
+* Remove the Atlas cluster
+
+
 # Extra Credit
 
 * Create a GCP Cloud Storage Bucket to host your own images
 * Follow along with the `runnerAdvanced.py` using the GCP Natural Language API to do sentiment analysis on non-URL text in the `text` attribute of a document
-  * When the runnerAdvanced.py script is running you can enter text into the search box of the web application and the code will perform sentiment analysis on it, presenting the results in the output pane
+  * When the `runnerAdvanced.py` script is running you can enter text into the search box of the web application and the code will perform sentiment analysis on it, presenting the results in the output pane
   * Note: you will need to enable the 'Cloud Natural Language API' in your GCP project before running the runnerAdvanced.py script, in the same way you enabled the 'Cloud Vision API'
 * Find another GCP API and integrate with it. Examples:
   * Use the Cloud Translation API to extend the `runnerAdvanced.py` to translate your text into another language
