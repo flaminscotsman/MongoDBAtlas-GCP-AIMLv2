@@ -22,6 +22,7 @@ cfg = configparser.ConfigParser()
 cfg.read('settings.cfg')
 
 # configure connection to mongodb
+print("Connecting to Atlas...")
 conn = pymongo.MongoClient(cfg['DEFAULT']['_URI'])
 try:
     conn.server_info()
@@ -31,7 +32,7 @@ except Exception as e:
     sys.exit(1)
 
 handle = conn[cfg['DEFAULT']['_DBNAME']][cfg['DEFAULT']['_COLNAME']]
-print("Connected to Atlas!")
+print("Connected!")
 
 # configure connection to gcp vision api
 os.environ["GOOGLE_APPLICATION_CREDENTIALS"]="gcpcreds.json"
