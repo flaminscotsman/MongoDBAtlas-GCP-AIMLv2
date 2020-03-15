@@ -34,11 +34,11 @@
 
 >![](images/atlas-j-8.png)
 
-* Go to “Clusters” submenu, under “Atlas” on the left menu, then click "Collections" for your cluster.
+* Go to “Clusters” submenu, under “Atlas” on the left menu, then click "Collections" for your cluster (you may need to wait a little longer for the cluster to be fully created).
 
 > <img src="images/atlas-j-9.png" height="250">
 
-* Click "Add My Own Data
+* Click "Add My Own Data"
 
 >![](images/atlas-j-10.png)
 
