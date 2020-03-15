@@ -57,5 +57,4 @@ Here we want to restrict output with a calculated field for each movie:
 
 | Stage                                 | Answer |
 |---------------------------------------|--------|
-| Retrieve just the title and how many years old | `$project { _id:0, title:1,    yearsOld: { $subtract:    [2019,"$year"]}}`
-| 
+| Retrieve just the title and how many years old | `$project { _id:0, title:1,    yearsOld: { $subtract:    [2020,"$year"]}}`
