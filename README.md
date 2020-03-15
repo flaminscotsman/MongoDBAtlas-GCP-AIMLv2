@@ -81,18 +81,6 @@ Feel free to use the following URLs for execution:
 4. https://storage.googleapis.com/demo-visionapi-atlas/Marketing/eiffel-tower.jpg
 5. https://storage.googleapis.com/demo-visionapi-atlas/Finance/check.jpg
 
-# Tear Down
-
-Once complete you can tear down the project as follows:
-
-* Disable the 'Cloud Vision API' and (if required) the 'Cloud Natural Language API'
-* Remove the Firewall rule
-* Terminate the GCP VM
-* Remove the Atlas Whitelist rule
-* Remove the Atlas user
-* Remove the Atlas cluster
-
-
 # Extra Credit
 
 * Create a GCP Cloud Storage Bucket to host your own images
@@ -103,3 +91,13 @@ Once complete you can tear down the project as follows:
   * Use the Cloud Translation API to extend the `runnerAdvanced.py` to translate your text into another language
   * Consider integrating the Google Assistant API
 
+# Tear Down
+
+Once you're ready to terminate the project you can tear down each component as follows:
+
+* Disable the *Cloud Vision API* and (if required) the *Cloud Natural Language API*
+* Remove the Firewall rule
+* Terminate the GCP VM
+* Remove the Atlas Whitelist rule
+* Remove the Atlas user
+* Remove the Atlas cluster
