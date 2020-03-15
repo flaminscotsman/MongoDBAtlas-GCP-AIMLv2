@@ -73,6 +73,7 @@ Please note that it may not be possible to copy/paste the entire block above int
 * Edit the `gcpcreds.json` and replace the contents with the credentials from the JSON file you downloaded earlier (when creating the service credentials).
 * Edit `settings.cfg` and update it with the Atlas connection string created earlier
 * Run `python3 runner.py` to start the application
+  * Note: The application should connect immediately. However, if it appears to hang make sure your Atlas Whitelist and user credentials are setup and entered correctly
 * Visit the URL of your server port 8088 and you should see a web page
   * e.g. if the public IP address of your Google Cloud instance is 12.23.45.56, open a browser and visit http://12.23.45.56:8088
 * Try to enter an image URL into the entry field to have the image analysed by Google Vision API
