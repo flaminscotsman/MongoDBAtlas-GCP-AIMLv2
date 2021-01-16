@@ -13,7 +13,7 @@
       // what is the server IP address
       var localip = window.location.hostname;
       // open a websocket to that server but use the websocket port not http port
-      var connection = new WebSocket('ws://' + localip + ":8089");
+	    var connection = new WebSocket('ws://' + localip + ":{{ ws_port }}");
       
       // we got a message from the python code via the web socket 
       connection.onmessage = function (event) {

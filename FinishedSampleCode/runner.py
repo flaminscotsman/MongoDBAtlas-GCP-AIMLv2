@@ -13,6 +13,11 @@ from google.cloud import vision
 import json
 from datetime import datetime
 
+try:
+    VisionImage = vision.types.Image
+except AttributeError:
+    VisionImage = vision.Image
+
 # global variables
 _WEBSETTINGS = { "static_path": os.path.join(os.path.dirname(__file__)+"Web/", "static") }
 _clients = []
@@ -23,7 +28,8 @@ cfg.read('settings.cfg')
 
 # configure connection to mongodb
 print("Connecting to Atlas...")
-conn = pymongo.MongoClient(cfg['DEFAULT']['_URI'])
+mongodb_config = {'tls': True, 'tlsCertificateKeyFile': cfg['DEFAULT']['_CERT']} if '_CERT' in cfg['DEFAULT'] else {}
+conn = pymongo.MongoClient(cfg['DEFAULT']['_URI'], **mongodb_config)
 try:
     conn.server_info()
 except Exception as e:
@@ -49,7 +55,7 @@ except Exception as e:
 #########
 class MainHandler(tornado.web.RequestHandler):
     def get(self):
-        self.render("Web/index.html", title="Welcome")
+        self.render("Web/index.html", title="Welcome", ws_port=cfg['DEFAULT']['_WEBSOCKPORT'])
 
 class WebSockHandler(tornado.websocket.WebSocketHandler):
     def open(self):
@@ -99,7 +105,7 @@ if __name__ == "__main__":
             # make sure it had a URL attribute
             if "url" in change["fullDocument"]:
                 # boilerplate to prep gcp api request
-                image = vision.types.Image()
+                image = VisionImage()
                 image.source.image_uri = change["fullDocument"]["url"]
                 resp = gcpapi.label_detection(image=image)
 
